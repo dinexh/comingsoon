@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.maintain-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #970003; */
+    background-color: black;
+    color: white;
+}
+
+.maintain-container-in {
+    padding: 1rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.maintain-container-in-info-heading {
+    text-align: center;
+}
+.maintain-container-in-info-heading h1 {
+    font-size: 1.8rem;
+    color: white;
+}
+.loader-main-in-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #970003;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(80px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.lava-lamp {
+    border: 2px solid white;
+    position: relative;
+    width: 50px;
+    height: 100px;
+    /* background: #800000; */
+    background-color: black;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.bubble, .bubble1, .bubble2, .bubble3 {
+    position: absolute;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.bubble {
+    background: linear-gradient(to bottom, #4B0082, #8A2BE2);
+    left: 15px;
+    animation: drop 5s ease-in-out infinite;
+}
+
+.bubble1 {
+    background: linear-gradient(to bottom, #00CED1, #20B2AA);
+    left: 1px;
+    animation: drop 3s ease-in-out infinite;
+}
+
+.bubble2 {
+    background: linear-gradient(to bottom, #FF4500, #FF6347);
+    left: 30px;
+    animation: drop 4s ease-in-out infinite;
+}
+
+.bubble3 {
+    background: linear-gradient(to bottom, #1E90FF, #00BFFF);
+    left: 20px;
+    animation: drop 6s ease-in-out infinite;
+}
